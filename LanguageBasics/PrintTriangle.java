@@ -17,8 +17,8 @@ public class PrintTriangle {
         int i = 0;
 
         while(i < size) {
-            printChars(size - i - 1, ' ');
-            printChars(2 * (i + 1), '*');
+            printChars(size - i - 2, ' ');
+            printChars(1 * (i + 1), '*');
             System.out.println();
         }
     }
