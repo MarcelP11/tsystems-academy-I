@@ -11,5 +11,5 @@ public class Truck extends Car{
         this.load = load;
     }
 
-    public void unload
+    //public void unload
 }

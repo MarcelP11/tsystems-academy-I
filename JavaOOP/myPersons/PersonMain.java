@@ -17,7 +17,7 @@ public class PersonMain {
         System.out.println(p1);
         System.out.println(p2);
 
-        myPerson p3 = new myPerson("Tomas")
+        myPerson p3 = new myPerson("Tomas");
 
         }
     }
