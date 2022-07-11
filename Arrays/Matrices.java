@@ -11,10 +11,10 @@ public class Matrices {
 
     //scitanie matric
     public static int[][] addMatrices(int[][] matrixA, int[][] matrixB) {
-        int[][] matrixC = new int[4][5];
+        int[][] matrixC = new int[matrixA.length][matrixA[0].length];
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixA[i].length; j++) {
-                matrixC[i][j] = matrixA[i][j] + matrixB[i][j];
+                    matrixC[i][j] = matrixA[i][j] + matrixB[i][j];
             }
         }
         return matrixC;
@@ -22,7 +22,7 @@ public class Matrices {
 
     //odcitanie matric
     public static int[][] subtractMatrices(int[][] matrixA, int[][] matrixB) {
-        int[][] matrixC = new int[4][5];
+        int[][] matrixC = new int[matrixA.length][matrixA[0].length];
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixA[i].length; j++) {
                 matrixC[i][j] = matrixA[i][j] - matrixB[i][j];
@@ -33,7 +33,7 @@ public class Matrices {
 
     //transpozicia matric
     public static int[][] transpose(int[][] matrixA) {
-        int[][] matrixC = new int[5][4];
+        int[][] matrixC = new int[matrixA[0].length][matrixA.length];
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixA[i].length; j++) {
                 matrixC[j][i] = matrixA[i][j];
@@ -52,7 +52,7 @@ public class Matrices {
                 for (int i = 0; i < matrixA[k].length; i++) {
                     for (int h = 0; h < matrixB[j].length; h++) {
                         int midResult = matrixA[k][i] * matrixB[h][j];
-                        a = +midResult;
+                        a += midResult;
                     }
                 }
                 matrixC[k][j] = a;
@@ -62,8 +62,8 @@ public class Matrices {
     }
 
     public static void main(String[] args) {
-        int[][] aMatrix = new int[4][5];
-        int[][] bMatrix = new int[4][5]; //vytvorim si 2 matice 4x5
+        int[][] aMatrix = new int[4][6];
+        int[][] bMatrix = new int[4][6]; //vytvorim si 2 matice 4x5
 
         //naplnim hodnotami obe polia a v matrici b zacnem od 1
         for (int i = 0; i < aMatrix.length; i++) {
@@ -83,11 +83,11 @@ public class Matrices {
         printMatrix(addition);  //vypisanie suctu
         int[][] subtraction = subtractMatrices(aMatrix, bMatrix);  //vytvorenie odciatania
         printMatrix(subtraction);  //vypisanie odcitania
-        int[][] transposeA = transpose(aMatrix);  //transpozicia
-        int[][] transposeB = transpose(aMatrix);
+        int[][] transposeA = transpose(aMatrix);  //transpozicia a matice
+        int[][] transposeB = transpose(bMatrix);  //transpozicia b matice
         printMatrix(transposeA);
         printMatrix(transposeB);
-        int[][] multiplication = multiply(aMatrix, bMatrix);
-        printMatrix(multiplication);
+        //int[][] multiplication = multiply(aMatrix, bMatrix);
+        //printMatrix(multiplication);
     }
 }
