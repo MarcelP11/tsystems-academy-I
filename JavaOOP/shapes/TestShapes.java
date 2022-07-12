@@ -3,10 +3,10 @@ package shapes;
 public class TestShapes {
 
     public static void main(String[] args) {
-        Point point1 = new Point(0, 0);
-        Point point2 = new Point(10, 10);
-        Line line = new Line(point1, point2);
-        Shape point3 = new Point(2, 3);
+        //Point point1 = new Point(0, 0);
+       // Point point2 = new Point(10, 10);
+       // Line line = new Line(point1, point2);
+       // Shape point3 = new Point(2, 3);
 
         Shape[] shapes = {
                 new Square(10),

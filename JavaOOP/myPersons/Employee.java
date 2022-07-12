@@ -23,6 +23,6 @@ public class Employee extends myPerson {
 
     @Override
     public String toString() {
-        return "EMPLOYEE "+ super.toString() + ", " +jo;
+        return "EMPLOYEE "+ super.toString() + ", ";
     }
 }
