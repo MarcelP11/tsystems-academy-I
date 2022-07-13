@@ -22,13 +22,26 @@ public class Line extends Shape {
     }
 
     public String toString() {
+
+        //verzia so String builderom
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < size; i++) {
+            sb.append(super.color).append(" ");  //pripaja znaky co su v color
+        }
+        return sb.toString();  //vrati hodnotu v stringe
+    }
+
+
+        //verzia bez append a String builder
+        /*
         String s = "";
+
         for (int i = 0; i < size; i++) {
             s += super.color;
         }
         return s;
     }
-
+*/
     @Override
     public void print() {
         System.out.println(this.toString());
