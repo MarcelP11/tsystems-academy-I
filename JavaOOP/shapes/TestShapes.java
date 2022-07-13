@@ -14,7 +14,8 @@ public class TestShapes {
                 new Rectangle(10, 30),
                 new Rectangle(100, 20, 'o'),
                 new Triangle(50),
-                new Triangle(30, 'u')
+                new Triangle(30, 'u'),
+                new Line(5,'d')
 };
 
         for (Shape shape:shapes) {
