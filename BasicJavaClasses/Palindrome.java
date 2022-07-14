@@ -13,7 +13,7 @@ public class Palindrome {
             System.out.println(palindrome.toString() + " (this is not palindrome)");
         }
     }
-//komentar na Idei3
+//komentar na Idei2
     public static void main(String[] args) {
         String palindrome1 = "jarko";
         String palindrome2 = "Kajak a kajak";
