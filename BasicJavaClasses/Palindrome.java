@@ -3,6 +3,7 @@ public class Palindrome {
         String lowerPalindrome = palindrome.toLowerCase();  //prevediem hodnotu String parametra na male pismena
         int len = palindrome.length();  //dlzka celeho Stringu
         StringBuilder dest = new StringBuilder(len);  //novy StringBuilder objekt dest s dlzkou length
+        //dest.reverse();
         for (int i = (len - 1); i >= 0; i--) {
             dest.append(Character.toLowerCase(lowerPalindrome.charAt(i)));  //vytvorenie hodnoty pomocou append ale odzadu
         }
