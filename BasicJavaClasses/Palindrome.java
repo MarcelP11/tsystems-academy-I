@@ -24,6 +24,6 @@ public class Palindrome {
         methodPalindrome(palindrome3);
         methodPalindrome(palindrome4);
         
-        //komentar 1
+        //komentar 123
     }
 }
