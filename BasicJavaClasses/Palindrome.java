@@ -17,11 +17,13 @@ public class Palindrome {
     public static void main(String[] args) {
         String palindrome1 = "jarko";
         String palindrome2 = "Kajak a kajak";
-        String palindrome3 = "Toto saS Otot";
-        String palindrome4 = "Miska";
+        String palindrome3 = "Toto saS OtoT";
+        String palindrome4 = "Misk";
         methodPalindrome(palindrome1);
         methodPalindrome(palindrome2);
         methodPalindrome(palindrome3);
         methodPalindrome(palindrome4);
+        
+        //komentar 1
     }
 }
