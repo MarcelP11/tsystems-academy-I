@@ -2,7 +2,7 @@
 public class NumberToText {
 	//TODO: Fix main method
     public static void  main(String[] args){
-        int number = Integer.parseInt(args[0]);
+        int number = Integer.parseInt("1534");
 
         if(number >= 1000) {
             writeNumber(number % 1000);

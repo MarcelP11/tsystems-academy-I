@@ -9,6 +9,8 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+
+
     public Rectangle(int width, int height, char color) {
         super(color);
         this.width = width;

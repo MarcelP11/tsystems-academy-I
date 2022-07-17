@@ -15,6 +15,7 @@ public class PersonMain {
                 new Employee("Robert", 35, "master mega chief")
         };
 
+        persons[0].setCar(new Car("Toyota"));
         Arrays.sort(persons);
 
         for (myPerson person : persons) {

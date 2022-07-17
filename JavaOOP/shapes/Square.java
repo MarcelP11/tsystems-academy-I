@@ -37,4 +37,5 @@ public class Square extends Shape {
             System.out.println(this.toString());
         }
     }
+
 }

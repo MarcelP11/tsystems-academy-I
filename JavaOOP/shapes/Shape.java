@@ -13,6 +13,8 @@ public abstract class Shape {
         this.color = color;
     }
 
+
+
     public int getColor() {
         return color;
     }
